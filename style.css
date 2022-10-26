@@ -1,0 +1,361 @@
+body{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    background-image: url(red.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.topbar{
+    width: 100%;
+    height: 12%;
+    border-radius: 0px;
+    border: 0px;
+    margin: 0px;
+    padding: 0px;
+    background-color: transparent;
+    
+}
+
+.title{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: rgb(30, 30, 30);
+    margin-left: 3%;
+    margin-top: 1%;
+    height: 5%;
+    width: 5%;
+}
+
+.gps{
+    width: 15px;
+    height: 15px;
+}
+
+.local{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: rgb(30, 30, 30);
+    position: absolute;
+    left: 88%;
+    top: 5%;
+}
+
+/*button{
+    min-width: 120px;
+    height: 36px;
+    font-size: 16px;
+    cursor: pointer;
+    letter-spacing: .1px;
+    outline: none;
+    border: none;
+    border-radius: 2px;
+    box-shadow: 0 0 0 2px rgb(44, 44, 44);
+    background-color: transparent;
+    color: rgb(30, 30, 30);
+    transition: all 200ms ease-in-out;
+    margin-top: 10px;
+}
+
+button:hover{
+    transform: scale(1.1);
+    background-color: #bebebe;
+    color: #000000;
+    font-weight: bold;
+    box-shadow: 0 0 0 2px #000000;
+    letter-spacing: 1.1px;
+    border-top-left-radius: 16px;
+    border-bottom-right-radius: 16px;
+}
+
+button:active{
+    transform: scale(1);
+}*/
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.topbar ul{
+    list-style: none;
+    position: relative;
+}
+
+.topbar ul li{
+    width: 150px;
+    float: left;
+}
+
+.topbar a{
+    padding: 15px;
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    background-color: transparent;
+    color: rgb(30, 30, 30);
+    transition: all 200ms ease-in-out;
+}
+
+.topbar ul ul{
+    position: absolute;
+    visibility: hidden;
+    z-index: 4;
+}
+
+.topbar ul li:hover ul{
+    visibility: visible;
+}
+
+.topbar a:hover{
+    background-color: rgb(30, 30, 30);
+    color: rgb(202, 202, 202);
+}
+
+.topbar ul ul li{
+    float: none;
+    border-bottom: solid 1px;
+    border-left: solid 1px;
+}
+
+.topbar ul ul li a{
+    background-image: url(red.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.bot{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin-left: 28%;
+    margin-top: -2%;
+    position: absolute;
+    font-size: large;
+}
+
+.lupa{
+    width: 15px;
+    height: 15px;
+}
+
+.topbar a:hover .lupa{
+    filter: invert(100%);
+}
+
+.home{
+    width: 15px;
+    height: 15px;
+}
+
+.topbar a:hover .home{
+    filter: invert(100%);
+}
+
+.point{
+    width: 15px;
+    height: 15px;
+}
+
+.topbar a:hover .point{
+    filter: invert(100%);
+}
+
+.box1{
+    border-radius: 20px;
+    border: 0px;
+    margin: 0px auto;
+    padding: 3px;
+    height: 20px;
+    width: 150px;
+    font-size: 16px;
+    letter-spacing: 1px;
+    outline: none;
+    box-shadow: 0 0 0 2px #f7f7f7;
+    background-color: transparent;
+    color: #ffffff;
+    transition: all 200ms ease-in-out;
+    margin-top:10px;
+    text-align: center;
+}
+
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 100%;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #464646;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+.cine{
+    width: 100%;
+    position: absolute;
+}
+
+.textcine{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: white;
+    padding: 0;
+    border: 0px;
+    margin-left: 1%;
+    margin-top: 20%;
+    position: absolute;
+    text-align: center;
+    font-size: 40px;
+    text-shadow: 4px 8px 10px rgb(0, 0, 0), 0 0 2px rgb(122, 0, 27);
+}
+
+
+
+footer{
+    position: relative;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: transparent;
+    color: rgb(0, 0, 0);
+    height: 100%;
+    width: 100%;
+    margin-top: 70%;
+
+}
+.footer-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column; 
+    text-align: center;
+}
+.footer-content h3{
+    font-size: 20px;
+    font-weight: lighter;
+    line-height: 2px;
+    padding-top: 10px;
+    margin-bottom: 2px;
+}
+.footer-content p{
+    max-width: 800px;
+    margin: 10px auto;
+    line-height: 30px;
+    font-size: 14px;
+    font-weight: lighter;
+}
+.socials{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 0 0 0;
+}
+.socials li{
+    margin: 0 10px;
+}
+.socials a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+.socials a i{
+    font-size: 22px;
+    transition: color .4s ease;
+}
+.socials a:hover i{
+    color: #ff00f2;
+}
+.footer-bottom{
+    background-color: transparent;
+    width: auto;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    text-align: center;
+}
+.footer-bottom p{
+    font-size: 15px;
+    word-spacing: 2px;
+}
+.footer-bottom span{
+    opacity: .7;
+    text-shadow: 1px 1px 1px rgb(0, 0, 0);
+}
