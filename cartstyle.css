@@ -3,7 +3,7 @@ body{
     height: 100%;
     margin: 0px;
     padding: 0px;
-    background-image: url(red.jpg);
+    background-image: url(pipocafundo2.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -17,8 +17,11 @@ body{
     border: 0px;
     margin: 0px;
     padding: 0px;
-    background-color: transparent;
-    
+    background-image: url(red.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
 }
 
 .title{
@@ -184,118 +187,9 @@ button:active{
 
 * {box-sizing:border-box}
 
-/* Slideshow container */
-.slideshow-container {
-  max-width: 100%;
-  position: relative;
-  margin: auto;
-}
-
-/* Hide the images by default */
-.mySlides {
-  display: none;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-}
-
-/* Next & previous buttons */
-.prev, .next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  margin-top: 0.5rem;
-  padding: 1rem;
-  color: white;
-  font-weight: bold;
-  font-size: 1rem;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-}
-
-/* Position the "next button" to the right */
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
-}
-
-/* Caption text */
-.text {
-  color: #f2f2f2;
-  font-size: 1rem;
-  padding: 8px 1rem;
-  position: absolute;
-  bottom: 1rem;
-  width: 100%;
-  text-align: center;
-}
-
-/* Number text (1/3 etc) */
-.numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
-}
-
-/* The dots/bullets/indicators */
-.dot {
-  cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-}
-
-.active, .dot:hover {
-  background-color: #464646;
-}
-
-/* Fading animation */
-.fade {
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
-
-@keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
-}
-
-.desc1{
-    display: inline-block;
-    position: relative;
-    background-image: url(cinema2);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    height: 40rem;
-    width: 100%;
-}
-
-
-.textcine{
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    color: white;
-    padding: 0px;
-    border: 0px;
-    margin-left: 2rem;
-    margin-right: 2rem;
-    margin-top: 14rem;
-    position: relative;
-    text-align: center;
-    font-size: 2rem;
-    text-shadow: 4px 8px 10px rgb(0, 0, 0), 0 0 2px rgb(122, 0, 27);
+.container{
+    display: grid;
+    grid-template-columns: auto auto auto;
 }
 
 footer{
@@ -303,7 +197,11 @@ footer{
     bottom: 0;
     left: 0;
     right: 0;
-    background-color: transparent;
+    background-image: url(red.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
     color: rgb(0, 0, 0);
     height: 100%;
     width: 100%;
@@ -354,7 +252,11 @@ footer{
     color: #ff3300;
 }
 .footer-bottom{
-    background-color: transparent;
+    background-image: url(red.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
     width: auto;
     padding-bottom: 20px;
     padding-top: 20px;
